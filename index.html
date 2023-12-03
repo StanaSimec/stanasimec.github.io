@@ -18,10 +18,8 @@
   <style>
     :root {
       --blue: #2d3464;
-    }
-    .image-placeholder {
-      background-color: grey;
-      border-radius: 100%;
+      --red: #e35052;
+      --yellow: #e4c72c;
     }
     .blue-background {
       background-color: var(--blue);
@@ -29,9 +27,12 @@
     .blue-text {
       color: var(--blue);
     }
+    .red-border {
+      box-shadow: 0 0 1px 3px var(--red), 2px 1px 10px 5px var(--yellow);
+    }
   </style>
   <body>
-    <nav class="navbar has-shadow blue-background" role="navigation">
+    <nav class="navbar blue-background red-border" role="navigation">
       <div class="navbar-brand">
         <a class="navbar-item ml-4" href="#">
           <img
